@@ -1,0 +1,25 @@
+# Establish connection to SQL Server
+$Instance = "LION\TIGER"
+$ConnectionString = "Server=$Instance;Database=RecordDB; User Id=sa;Password=Kirkwall@25%;integrated Security=false;"
+
+# Main query
+$query = "SELECT a.ArtistId, a.FName, a.LName, a.Name AS ArtistName, r.RecordId,r.Name, r.Field, r.Recorded, r.Label, r.Pressing, r.Rating, r.Discs, r.Media, r.Bought, r.Cost FROM Artist a INNER JOIN Record r ON a.ArtistId = r.ArtistId  ORDER BY a.LName, a.FName, r.recorded FOR JSON path, root"
+
+$connection = New-Object System.Data.SqlClient.SqlConnection
+$connection.ConnectionString = $ConnectionString
+
+$connection.Open()
+$command = $connection.CreateCommand()
+
+$command.CommandText = $query
+
+$result = $command.ExecuteReader()
+
+$table = New-Object "System.Data.DataTable"
+
+$table.Load($result)
+
+$table | select $table.Columns.ColumnName # > records.json
+
+
+$connection.Close()
