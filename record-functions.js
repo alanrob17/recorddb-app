@@ -102,23 +102,23 @@ const findRecord = (artist, recordId) => {
     return artist.record.find((record) => record.recordid === recordId);
 }
 
-// Clean the artist biography
-const cleanBiography = (biography) => {
-    const regex = /~/gi;
-    const regex2 = /images/gi;
-    biography = biography.replace(regex, '"');
-    biography = biography.replace(regex2, 'assets/images/');
+// // Clean the artist biography
+// const cleanBiography = (biography) => {
+//     const regex = /~/gi;
+//     const regex2 = /images/gi;
+//     biography = biography.replace(regex, '"');
+//     biography = biography.replace(regex2, 'assets/images');
 
-    return biography;
-} 
+//     return biography;
+// } 
 
-// Clean the record review
-const cleanReview = (review) => {
-    const regex = /~/gi;
-    review = review.replace(regex, '"');
+// // Clean the record review
+// const cleanReview = (review) => {
+//     const regex = /~/gi;
+//     review = review.replace(regex, '"');
 
-    return review;
-}
+//     return review;
+// }
 
 // Create a readable rating for a record
 const getRecordRating = (rating) => {

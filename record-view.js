@@ -7,7 +7,7 @@ const hashArray  = (hash) => {
 }
 
 const renderAlbum = (artist, record) => {
-    const biography = cleanBiography(artist.biography);
+    const biography = artist.biography;
 
     document.querySelector('#artist').innerHTML = '';
     document.querySelector('#biography').innerHTML = '';
@@ -20,7 +20,7 @@ const renderAlbum = (artist, record) => {
      
     const bought = getRecordBoughtDate(record.bought);
 
-    const review = cleanReview(record.review);
+    const review = record.review;
 
     const pressing = getRecordPressing(record.pressing);
     

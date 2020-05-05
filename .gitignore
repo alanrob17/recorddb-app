@@ -2,3 +2,5 @@
 .netlify
 
 *.bak
+
+get-data.ps1.txt
