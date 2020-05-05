@@ -2,27 +2,27 @@
 
 // Read existing artists from localStorage
 const getSavedArtists = () => {
-
+    
     let artistsJSON = localStorage.getItem('artistList');
-    
-    let artists = JSON.parse(artistsJSON);
 
-    // artists is null here
-    // keyname is artistList
-    if (artists !== null) {
-        return artists;
-    } else {
-        artists = saveArtists(artistList);
-        artistsJSON = localStorage.getItem('artistList');
-    
-        artists = JSON.parse(artistsJSON);
+    // if they don't exist
+    if (!artistsJSON) {
+        saveArtists(artistList);
+        console.log('Loaded JSON data!');
+    } 
 
-        return artists
+    artistsJSON = localStorage.getItem('artistList');
+    const artists = JSON.parse(artistsJSON);
+
+    if (!artists) {
+        console.log('Artist JSON is missing!');        
     }
+
+    return artists;
 }
 
 // Save the artists to localStorage
-const saveArtists = function (artistList) {
+const saveArtists = (artistList) => {
     localStorage.setItem('artistList', JSON.stringify(artistList));
 }
 
