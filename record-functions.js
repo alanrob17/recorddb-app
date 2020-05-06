@@ -12,13 +12,17 @@ const getSavedArtists = () => {
     } 
 
     artistsJSON = localStorage.getItem('artistList');
-    const artists = JSON.parse(artistsJSON);
 
-    if (!artists) {
-        console.log('Artist JSON is missing!');        
+    try {
+        const artists = JSON.parse(artistsJSON);
+        return artists;
+    } catch (e) {
+        console.log(`Message: ${e}`);        
     }
 
-    return artists;
+    if (!artists) {
+            console.log('Artist JSON is missing!');
+    }
 }
 
 // Save the artists to localStorage
