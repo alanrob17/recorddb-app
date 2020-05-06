@@ -13,8 +13,10 @@ const getSavedArtists = () => {
 
     artistsJSON = localStorage.getItem('artistList');
 
+    let artists = '';
+
     try {
-        const artists = JSON.parse(artistsJSON);
+        artists = JSON.parse(artistsJSON);
         return artists;
     } catch (e) {
         console.log(`Message: ${e}`);        
