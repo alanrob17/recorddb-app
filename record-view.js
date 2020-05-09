@@ -26,15 +26,11 @@ const renderAlbum = (artist, record) => {
     
     const artistElement = document.createElement('h3');
     const nameElement = document.createElement('h2');
-    const recordedElement = document.createElement('p');
-    const fieldElement = document.createElement('p');
-    const labelElement = document.createElement('p');
-    const pressingElement = document.createElement('p');
-    const ratingElement = document.createElement('p');
-    const discsElement = document.createElement('p');
-    const mediaElement = document.createElement('p');
-    const boughtElement = document.createElement('p');
-    const costElement = document.createElement('p');
+    const recordedElement = document.createElement('div');
+    const labelElement = document.createElement('div');
+    const ratingElement = document.createElement('div');
+    const mediaElement = document.createElement('div');
+    const costElement = document.createElement('div');
     const reviewElement = document.createElement('div');
     reviewElement.className = 'smaller'; 
     const reviewButtonElement = document.createElement('button');
@@ -61,28 +57,22 @@ const renderAlbum = (artist, record) => {
     
     artistElement.innerHTML = `<a href="/index.html#${artist.artistid}">${artist.name}</a>`;
     nameElement.textContent = record.name;
-    recordedElement.innerHTML = `<strong>Recorded:</strong> ${record.recorded}`;
-    fieldElement.innerHTML = `<strong>Field:</strong> ${record.field}`;
-    labelElement.innerHTML = `<strong>Label:</strong> ${record.label}`;
-    pressingElement.innerHTML = `<strong>Pressing:</strong> ${pressing}`;
-    ratingElement.innerHTML = `<strong>Rating:</strong> ${rating}`;
-    discsElement.innerHTML = `<strong>Discs:</strong> ${record.discs}`;
-    mediaElement.innerHTML = `<strong>Media:</strong> ${media}`;
-    boughtElement.innerHTML = `<strong>Bought:</strong> ${bought}`;
-    costElement.innerHTML = `<strong>Cost:</strong> ${record.cost}`;
+
+    recordedElement.innerHTML = `<div class="justify-content-start row mt-3"><div class="col-sm-4"><p><strong>Recorded:</strong> ${record.recorded}</p></div><div class="col-sm-4"><p><strong>Field:</strong> ${record.field}</p></div><div class="col-sm-4"></div></div>`;
+    labelElement.innerHTML = `<div class="justify-content-start row mt-3"><div class="col-sm-4"><p><strong>Label:</strong> ${record.label}</p></div><div class="col-sm-4"><p><strong>Pressing:</strong> ${pressing}</p></div><div class="col-sm-4"></div></div>`;
+    ratingElement.innerHTML = `<div class="justify-content-start row mt-3"><div class="col-sm-4"><p><strong>Rating:</strong> ${rating}</p></div><div class="col-sm-4"><p><strong>Discs:</strong> ${record.discs}</p></div><div class="col-sm-4"></div></div>`;
+    mediaElement.innerHTML = `<div class="justify-content-start row mt-3"><div class="col-sm-4"><p><strong>Media:</strong> ${media}</p></div><div class="col-sm-4"><p><strong>Bought:</strong> ${bought}</p></div><div class="col-sm-4"></div></div>`;
+    costElement.innerHTML = `<div class="justify-content-start row mt-3"><div class="col-sm-4"><p><strong>Cost:</strong> ${record.cost}</p></div><div class="col-sm-4"><p>&nbsp;</p></div><div class="col-sm-4"></div></div>`;
+
     reviewElement.innerHTML = `<br/> ${review}`;
     biographyElement.innerHTML = `<br/> ${biography}`;
     
     document.querySelector('#artist').appendChild(artistElement);
     document.querySelector('#album').appendChild(nameElement);
     document.querySelector('#album').appendChild(recordedElement);
-    document.querySelector('#album').appendChild(fieldElement);
     document.querySelector('#album').appendChild(labelElement);
-    document.querySelector('#album').appendChild(pressingElement);
     document.querySelector('#album').appendChild(ratingElement);
-    document.querySelector('#album').appendChild(discsElement);
     document.querySelector('#album').appendChild(mediaElement);
-    document.querySelector('#album').appendChild(boughtElement);
     document.querySelector('#album').appendChild(costElement);
     document.querySelector('#album').appendChild(reviewButtonElement);
     document.querySelector('#review').appendChild(reviewElement);
