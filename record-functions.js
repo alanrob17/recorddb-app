@@ -33,9 +33,7 @@ const saveArtists = (artistList) => {
 }
 
 const getArtist = (artists, artistId) => {
-    return artists.find((artist) => {
-        return artist.artistid === artistId ? artist : '';
-    });
+    return artists.find((artist) => artist.artistid === artistId ? artist : '');
 }
 
 const renderArtists = (artists, filters) => {
