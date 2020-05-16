@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Record DB</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/starter-template.css" rel="stylesheet">
+    <style>
+        .move-down {
+            margin-top: 3rem;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html">Record DB</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">List of artists</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="starter-template">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="dropdown">
+                            <select id="filter-by" class="dropdown">
+                                <option value="0"># Select an artist to view</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+            <!-- Record form section -->
+            <form name="record-form" action="" method="get">
+            <section id="record-form" class="py-3">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card p-4">
+                      <div class="card-body">
+                        <h3 id="header" class="text-center"></h3>
+                        <hr/>
+                        <div class="row">
+        			    <div class="col-md-12">
+                            <div class="form-group">
+                              <input id="name" type="text" class="form-control" placeholder="Title"/>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3">
+                            <div class="form-group">
+                              <select id="field" class="form-control">
+                                <option value="0"># Field</option>
+                                <option value="Acoustic">Acoustic</option>
+                                <option value="Audio">Audio</option>
+                                <option value="Blues">Blues</option>
+                                <option value="Classical">Classical</option>
+                                <option value="Comedy">Comedy</option>
+                                <option value="Country">Country</option>
+                                <option value="Folk">Folk</option>
+                                <option value="Fusion">Fusion</option>
+                                <option value="Jazz">Jazz</option>
+                                <option value="Pop">Pop</option>
+                                <option value="Rock">Rock</option>
+                                <option value="Soul">Soul</option>
+                                <option value="Soundtrack">Soundtrack</option>
+                                <option value="World">World</option>
+							  </select>
+                            </div>
+                          </div>
+                          <div class="col-md-3"></div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <input id="recorded" type="text" class="form-control" placeholder="Recorded"/>                 
+                            </div>                  
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                               <input id="label" type="text" class="form-control" placeholder="Label"/>
+                            </div>                  
+                          </div>
+                          <div class="col-md-3">
+                            <div class="form-group">
+                              <select id="pressing" class="form-control">
+                                <option value="0"># Pressing</option>
+                                <option value="Am">American</option>
+                                <option value="Aus">Australian</option>
+                                <option value="Can">Canadian</option>
+                                <option value="Eng">English</option>
+                                <option value="Fra">French</option>
+                                <option value="Ger">German</option>
+                                <option value="Hk">Hong Kong</option>
+                                <option value="Hol">Netherlands</option>
+                                <option value="Ita">Italian</option>
+                                <option value="Jap">Japanese</option>
+                                <option value="Kor">Korean</option>
+                                <option value="Swe">Swedish</option>
+                                <option value="Swi">Swiss</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-3"></div>
+                        
+                        <div class="col-md-3">
+                            <div class="form-group">
+                               <select id="rating" class="form-control">
+                                <option value="0"># Rating</option>
+                                <option value="*">*</option>
+                                <option value="**">**</option>
+                                <option value="***">***</option>
+                                <option value="****">****</option>
+                              </select>
+                            </div>                  
+                          </div>
+                          <div class="col-md-3"></div>
+                          <div class="col-md-3">
+                            <div class="form-group">
+                              <select id="discs" class="form-control">
+                                <option value="0"># Discs</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-3"></div>
+                          <div class="col-md-3">
+                            <div class="form-group">
+                               <select id="media" class="form-control">
+                                <option value="0"># Media</option>
+                                <option value="CD">CD</option>
+                                <option value="R">R</option>
+                                <option value="DVD">DVD</option>
+                                <option value="CD/DVD">CD/DVD</option>
+                                <option value="Blu-ray">Blu-ray</option>
+                                <option value="CD/Blu-ray">CD/Blu-ray</option>
+                              </select>
+                            </div>                  
+                          </div>
+                          <div class="col-md-3"></div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <input id="bought" type="text" class="form-control" placeholder="Bought"/>                 
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                               <input id="cost" type="text" class="form-control" placeholder="Cost"/>
+                            </div>                  
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <input id="covername" type="text" class="form-control" placeholder="Cover name"/>                 
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <textarea id="review" class="form-control"  placeholder="Review" rows="5"></textarea>                 
+                            </div>                
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                                <input id="submit" type="submit" value="Submit" class="btn btn-outline-danger btn-block"/>
+                            </div>
+                            </div>                
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </section>
+        </form>
+        </div><!-- starter-template -->
+    </div><!-- /.container -->
+
+<script src="record-data.js"></script>
+<script src="record-functions.js"></script>
+<script src="addrecord.js"></script>
+<script src="record.js"></script>
+<script src="artist.js"></script>
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
+</body>
+</html>
