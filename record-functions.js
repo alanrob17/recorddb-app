@@ -2,14 +2,14 @@
 
 // Read existing artists from localStorage
 const getSavedArtists = () => {
-    
+
     let artistsJSON = localStorage.getItem('artistList');
 
     // if they don't exist
     if (!artistsJSON) {
         saveArtists(artistList);
         console.log('Loaded JSON data!');
-    } 
+    }
 
     artistsJSON = localStorage.getItem('artistList');
 
@@ -19,11 +19,11 @@ const getSavedArtists = () => {
         artists = JSON.parse(artistsJSON);
         return artists;
     } catch (e) {
-        console.log(`Message: ${e}`);        
+        console.log(`Message: ${e}`);
     }
 
     if (!artists) {
-            console.log('Artist JSON is missing!');
+        console.log('Artist JSON is missing!');
     }
 }
 
@@ -37,7 +37,7 @@ const getArtist = (artists, artistId) => {
 }
 
 const renderArtists = (artists, filters) => {
-    
+
     let filterArtistIdString = location.hash;
 
     location.hash = '';
@@ -60,40 +60,40 @@ const renderArtists = (artists, filters) => {
     }
 
     const filteredArtists = artists.filter((artist) => artist.name.toLowerCase().includes(filters.searchText.toLowerCase()));
-    
+
     document.querySelector('#artists').innerHTML = '';
 
     const summary = document.createElement('h5');
 
     if (filteredArtists.length > 1) {
         summary.textContent = `There are ${filteredArtists.length} artist\'s.`;
-    } 
-    
+    }
+
     document.querySelector('#artists').appendChild(summary);
-    
+
     filteredArtists.forEach((artist) => {
         let artistElement = document.createElement('h3');
-        
+
         // artistElement.textContent = artist.name;
-        artistElement.innerHTML = `<a href="/redirect.html#${artist.artistid}">${artist.name}</a>`;        
+        artistElement.innerHTML = `<a href="/redirect.html#${artist.artistid}">${artist.name}</a>`;
         document.querySelector('#artists').appendChild(artistElement);
-        
+
         // We have to limit the number of artist's and their records
-        if (filters.searchText.length > 2) {
+        if (filters.searchText.length >= 2) {
             // List each artist's records
             artist.record.forEach((record, index) => {
                 const recordElement = document.createElement('p');
                 let mediaType = record.media;
                 if (mediaType === 'records') {
                     mediaType = 'R';
-                } 
-                
+                }
+
                 recordElement.innerHTML = `${record.recorded}: <a href="/record.html#${record.artistid}-${record.recordid}">${record.name}</a> - (${mediaType})`;
 
                 document.querySelector('#artists').appendChild(recordElement);
-            });            
+            });
         }
-    });     
+    });
 }
 
 // Find an artist
@@ -128,16 +128,16 @@ const findRecord = (artist, recordId) => {
 const getRecordRating = (rating) => {
     switch (rating) {
         case '****':
-          rating = 'Indispensible';
-          break;
+            rating = 'Indispensible';
+            break;
         case '***':
-          rating = 'Slightly flawed';
-          break;
+            rating = 'Slightly flawed';
+            break;
         case '**':
-           rating = 'Average';
-          break;
+            rating = 'Average';
+            break;
         case '*':
-          rating = 'Mediocre';
+            rating = 'Mediocre';
     }
 
     return rating;
@@ -155,15 +155,15 @@ const getRecordMedia = (media) => {
         case 'CD/DVD':
             media = 'CD-Audio & DVD';
             break;
-            case 'DVD':
-                media = 'DVD';
-                break;
+        case 'DVD':
+            media = 'DVD';
+            break;
         case 'R':
             media = 'Record';
     }
 
     return media;
-} 
+}
 
 // Clean up the record bought date
 const getRecordBoughtDate = (bought) => {
@@ -171,11 +171,11 @@ const getRecordBoughtDate = (bought) => {
         bought = 'Unknown';
     } else {
         // this is me playing with dates
-        const day = record.bought.substr(0,2);
-        const month = record.bought.substr(3,2);
+        const day = record.bought.substr(0, 2);
+        const month = record.bought.substr(3, 2);
         const year = record.bought.substr(6);
-        let newDate = new Date(year + '-' + month + '-' + day).toLocaleString("en-AU", {timeZone: "Australia/Melbourne"});
-        bought = newDate.substr(0,10);
+        let newDate = new Date(year + '-' + month + '-' + day).toLocaleString("en-AU", { timeZone: "Australia/Melbourne" });
+        bought = newDate.substr(0, 10);
         //// This is the original date
         // bought = record.bought;
     }
@@ -195,8 +195,8 @@ const getRecordPressing = (pressing) => {
             pressing = 'Canadian';
             break;
         case 'Eng':
-                pressing = 'English';
-                break;
+            pressing = 'English';
+            break;
         case 'Fra':
             pressing = 'French';
             break;
@@ -229,7 +229,7 @@ const getRecordPressing = (pressing) => {
     }
 
     return pressing;
-} 
+}
 
 // for-loop version findArtist
 // const findArtist = function (artists, artistId) {
