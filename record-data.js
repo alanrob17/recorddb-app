@@ -22,6 +22,21 @@ const artistList = [
 				"bought": "03-03-2003",
 				"cost": "$0.00",
 				"review": ""
+			},
+			{
+				"recordid": 5242,
+				"artistid": 528,
+				"name": "Test...",
+				"field": "Blues",
+				"recorded": 2021,
+				"label": "None",
+				"pressing": "Am",
+				"rating": "**",
+				"discs": 1,
+				"media": "CD",
+				"bought": "20-01-2021",
+				"cost": "$10.00",
+				"review": "<p>This is a review.</p>"
 			}
 		]
 	},
@@ -789,7 +804,7 @@ const artistList = [
 		"firstname": "",
 		"lastname": "Ayers Rock",
 		"name": "Ayers Rock",
-		"biography": "<p>One of the first bands to record on the Mushroom label, the above album isan excellent example of jazz rock fusion Australian style. The musicianship isof high quality although it tends to become a little over-indulgent in places.The album kicks of though with the radio friendly <i>Lady Montego</i>but tracks such as <i>Crazy Boys</i>, <i>Nostalgic Blues</i> and <i>Big RedRock</i> in particular are filled with fine virtuoso guitar and saxophone.</p><p>Although the band were quite a popular live act their recordings were hamperedby a dilemma over whether to opt for a more serious pursuit of expanding thehorizons or for a commercial sound, which perhaps never really saw the bandreach its full potential on vinyl at least. </p><p>The later years saw many personnel changes and two more albums <i>Beyond</i>1976 and <i>Hotspell</i> 1981. </p><p>Their version of <i>Gimme</i><i> Shelter</i> and <i>BoogieWoogie Waltz</i> later appeared on <i>A-Reefer-Derci</span></i>, a budget double ",
+		"biography": "<p>One of the first bands to record on the Mushroom label, the above album isan excellent example of jazz rock fusion Australian style. The musicianship isof high quality although it tends to become a little over-indulgent in places.The album kicks of though with the radio friendly <em>Lady Montego</em>but tracks such as <em>Crazy Boys</em>, <em>Nostalgic Blues</em> and <em>Big RedRock</em> in particular are filled with fine virtuoso guitar and saxophone.</p><p>Although the band were quite a popular live act their recordings were hamperedby a dilemma over whether to opt for a more serious pursuit of expanding thehorizons or for a commercial sound, which perhaps never really saw the bandreach its full potential on vinyl at least. </p><p>The later years saw many personnel changes and two more albums <em>Beyond</em>1976 and <em>Hotspell</em> 1981. </p><p>Their version of <em>Gimme</em><em> Shelter</em> and <em>BoogieWoogie Waltz</em> later appeared on <em>A-Reefer-Derci</span></em>, a budget double album.",
 		"record": [
 			{
 				"recordid": 26,
@@ -7079,7 +7094,7 @@ const artistList = [
 			{
 				"recordid": 2007,
 				"artistid": 501,
-				"name": "Live At red Rocks 8.15.95",
+				"name": "Live At Red Rocks 8.15.95",
 				"field": "Rock",
 				"recorded": 1995,
 				"label": "Sony",
@@ -23521,9 +23536,9 @@ const artistList = [
 				"rating": "***",
 				"discs": 1,
 				"media": "R",
-				"bought": "",
+				"bought": "01-01-1900",
 				"cost": "$10.00",
-				"review": ""
+				"review": "<p>Graham Parker and the Rumour's third new studio album to be released in 18 months finds the bandleader running short of top-flight material; \"Thunder And Rain\" and \"Watch The Moon Come Down\" are up to his usual standards, but songs like \"The Heat In Harlem\" find him dangerously out of his depth. As a result, although fiercely played, this star-crossed release (it had to be re-recorded when the first version suffered technical problems) is a cut below Parker's first two albums.</p><p>&mdash; <strong>William Ruhlmann</strong></p>"
 			},
 			{
 				"recordid": 695,
@@ -23536,9 +23551,9 @@ const artistList = [
 				"rating": "***",
 				"discs": 2,
 				"media": "R",
-				"bought": "",
+				"bought": "01-01-1900",
 				"cost": "$2.00",
-				"review": ""
+				"review": "<p>In 1978, Graham Parker & the Rumour's career was on the rise in the U.K. and going nowhere in America, despite rave reviews for his first three albums and a growing reputation as a powerful live act. Most observers, including Parker himself, blamed his U.S. label, Mercury Records, for failing to give him the promotion he needed Stateside; eager to find a more suitable corporate partner, Parker opted to finish off his contract with Mercury via that time-honored form of contractual obligation filler, the double-live album. In many respects, The Parkerilla practically screams \"Let's get this over with,\" from the skimpy running time (54 minutes, including a studio re-recording of \"Hey Lord, Don't Ask Me Questions\" that filled side four) and unimaginative set list, to a slightly dodgy mix that keeps losing track of the horn section, and a sequence that has a hard time keeping one of the most exciting acts of the day in forward gear. However, Parker and the Rumour were too good on-stage for The Parkerilla to feel entirely like a throwaway; Parker's vocals are tough and soulful at every turn, the Rumour get more of a chance to show off their instrumental prowess here than they did on their studio recordings, and when the players connect with the right song, as they do on \"Back to Schooldays,\" \"Soul Shoes,\" and \"Gypsy Blood,\" it's hard not to wish this hadn't been such an obvious rush job, since the potential for a great concert set was clearly there. (The live take of \"Hey Lord, Don't Ask Me Questions\" is also superb, and makes mincemeat of the silly disco-influenced studio recut that closes out the album.) The Parkerilla has a reputation as a tossed-off disaster, and while it's a lot better than that, you don't have to know the back story to hear a band biding their time until something better comes along on this set.</p><p>&mdash; <strong>Mark Deming</strong></p>"
 			},
 			{
 				"recordid": 696,
@@ -23568,7 +23583,7 @@ const artistList = [
 				"media": "R",
 				"bought": "13-10-1990",
 				"cost": "$1.00",
-				"review": ""
+				"review": "<p>Generally regarded as Graham Parker's finest album, Squeezing Out Sparks is a masterful fusion of pub rock classicism, new wave pop, and pure vitriol that makes even his most conventional singer/songwriter numbers bristle with energy. Not only does Parker deliver his best, most consistent set of songs, but he offers more succinct hooks than before -- \"Local Girls\" and \"Discovering Japan\" are powered by quirky hooks that make them new wave classics. But Parker's new pop inclinations are tempered by his anger, which seethes throughout the hard rockers and even his quieter numbers. Throughout Squeezing Out Sparks, Graham spits out a litany of offenses that make him feel like an outsider, but he's not a liberal, he's a conservative. The record's two centerpieces -- \"Passion Is No Ordinary Word\" and the anti-abortion \"You Can't Be Too Strong\" -- indicate that his traditionalist musical tendencies are symptomatic of a larger conservative trend. But no one ever said conservatives made poor rock & rollers, and Parker's ruminations over a lost past give him the anger that fuels Squeezing Out Sparks, one of the great rock records of the post-punk era.</p><p>&mdash; <strong>Stephen Thomas Erlewine</strong></p>"
 			},
 			{
 				"recordid": 698,
@@ -23583,7 +23598,7 @@ const artistList = [
 				"media": "CD",
 				"bought": "14-06-1991",
 				"cost": "$6.00",
-				"review": ""
+				"review": "<p>Generally regarded as Graham Parker's finest album, Squeezing Out Sparks is a masterful fusion of pub rock classicism, new wave pop, and pure vitriol that makes even his most conventional singer/songwriter numbers bristle with energy. Not only does Parker deliver his best, most consistent set of songs, but he offers more succinct hooks than before -- \"Local Girls\" and \"Discovering Japan\" are powered by quirky hooks that make them new wave classics. But Parker's new pop inclinations are tempered by his anger, which seethes throughout the hard rockers and even his quieter numbers. Throughout Squeezing Out Sparks, Graham spits out a litany of offenses that make him feel like an outsider, but he's not a liberal, he's a conservative. The record's two centerpieces -- \"Passion Is No Ordinary Word\" and the anti-abortion \"You Can't Be Too Strong\" -- indicate that his traditionalist musical tendencies are symptomatic of a larger conservative trend. But no one ever said conservatives made poor rock & rollers, and Parker's ruminations over a lost past give him the anger that fuels Squeezing Out Sparks, one of the great rock records of the post-punk era.</p><p>&mdash; <strong>Stephen Thomas Erlewine</strong></p>"
 			},
 			{
 				"recordid": 699,
@@ -23596,9 +23611,9 @@ const artistList = [
 				"rating": "****",
 				"discs": 1,
 				"media": "R",
-				"bought": "",
+				"bought": "01-01-1900",
 				"cost": "$1.00",
-				"review": ""
+				"review": "<p>While it was something short of a hit, Squeezing Out Sparks did win a measure of richly deserved American recognition for Graham Parker & the Rumour, and for the follow-up, Parker's American record label, Arista, paired him up with hotshot producer Jimmy Iovine. The idea looked good on paper; Iovine had produced or engineered great sounding hard rock records for Bruce Springsteen, Tom Petty, and Patti Smith, and his tough but vibrant sound would seem the perfect match for Parker and his band. But one listen to The Up Escalator reveals that Iovine's trademark sound somehow escaped him for this project; the recording and mix are flat and poorly detailed (Brinsley Schwarz's lead guitar and Stephen Goulding's drums suffer the most), and the often mushy audio manages the remarkable feat of making the Rumour, one of the most exciting rock bands of their day, sound just a bit dull. But Parker fights the muddy sound every step of the way, and if his batting average as a songwriter is a shade lower than on Squeezing Out Sparks, he certainly offers up his share of A-list material, including the incendiary \"Empty Lives,\" the passionate \"The Beating of Another Heart,\" and \"Endless Night,\" which features one Bruce Springsteen on backing vocals. Parker's singing is sharp and commanding, and even though the mix lets them down, the Rumour's performances are tough and precise throughout. The Up Escalator failed to catch the ears of the mass audience, and Parker would soon part ways with the Rumour, but if this album doesn't present them in the best light, it shows that they could play tough, passionate rock & roll that could survive even the most adverse recording conditions.</p><p>&mdash; <strong>Mark Deming</strong></p>"
 			},
 			{
 				"recordid": 700,
@@ -23611,9 +23626,9 @@ const artistList = [
 				"rating": "***",
 				"discs": 1,
 				"media": "R",
-				"bought": "",
+				"bought": "01-01-1900",
 				"cost": "$4.50",
-				"review": ""
+				"review": "<p>When Graham Parker issued the Jack Nitzsche-produced Squeezing out Sparks in 1979, many inside the music industry -- from execs to critics -- figured that his next one would be it, since Squeezing just missed, though it was celebrated by nearly everyone who heard it. Two of Parker's first three albums -- Howlin' Wind and Heat Treatment -- were top-notch, hard hitting rock & roll albums full of great songs and mud-slinging pub rock production that connected in England. It felt like only a matter of time. Arista in its infinite wisdom paired Parker with Jimmy Iovine for The Up Escalator in 1980, and for some reason, Iovine decided to slicken up the singer/songwriter and his band rather than the hard-edged production that clicked when he worked with Bruce Springsteen and Tom Petty. While the songs were there, the sound wasn't, and it must have been discouraging for Parker. His moment had come and gone. Parker wasn't about to let fate cheat him, though, and for 1982's Another Grey Area, he teamed with veteran producer Jack Douglas, and placed his band on recording hiatus in favor of a slew of studio musicians including Nicky Hopkins, Hugh McCracken (!), David Brown and George Small among others. Things start well enough with the mid-tempo rocker \"Temporary Beauty\"; with its Springsteen-esque piano and ondioline courtesy of Hopkins, the rounded lead guitar lines fall into place, wrapping themselves around Parker's voice on the refrains, and it works. Parker nearly spits out his words, full of irony, empathy, piss and vinegar. They even hold up on the title track, which cooks along with a bitter edge, a brisk tempo set by a snare/hi-hat combination and six strings upfront pushing the singer. Female backing vocals to fill it in and the bassline nearly percolates. But Douglas' production begins to wear thin by \"Big Fat Zero,\" despite Parker's fine writing. He doesn't seem to be able to capture the knife edge the band tries to counter the vocals with. It's all swirl and twirl without resolution or warmth. Ironically, it's the rawness on Parker's earlier records that made them warm. The reliance on \"new wave\" sounding electric keyboards also mars the tunes. The ballad \"Dark Side of the Bright Lights,\" works well, as does the horn-driven, funky \"You Hit the Spot.\" But the sameness of some of the rockers such as \"Can't Waste a Minute\" and the poignant \"Crying for Attention\" suffer. \"It's All Worth Nothing Alone\" is punched up a bit, but there still seems to be this glassfloor sheen on everything, which is entirely at odds with the biting humor and scathing social observations Parker makes in both his lyrics and his delivery. Ultimately, Another Grey Area is another \"might have been if\" set for Parker, and about the last time he believed a word of what anyone from a record company ever said to him.</p><p>&mdash; <strong>Thom Jurek</strong></p>"
 			},
 			{
 				"recordid": 701,
@@ -23643,7 +23658,7 @@ const artistList = [
 				"media": "CD",
 				"bought": "20-01-1999",
 				"cost": "$10.00",
-				"review": ""
+				"review": "<p>There's a wonderful, solitary beauty to the performance captured on this CD, from Philadelphia's Theatre of Living Arts in October of 1988. True, Parker doesn't do any radical re-tooling of any of his repertory in the manner of, say, Bob Dylan. But he does give us a lot of that repertory, going back more than a decade to Howlin' Wind, and into some unexpected corners of his work; fans may quibble about the choices, but taken on its own terms, what's here is delightful. The combination of his voice and a solo acoustic guitar, plus a relaxed venue and an obviously appreciative crowd, seem to have yielded a perfect vibe for the duration of the show. What's more, stripping Parker's songs to their basics is a good idea, lending them a folk-like spontaneity and intimacy that gives the words more meaning and the music more of a pronounced (yet still understated) beauty. Even \"Three Martini Lunch\" achieves a quiet, rootsy splendor and honesty. And Parker's voice rises to the occasion, with an elegant expressiveness that's much more (if not impossible) difficult to achieve in an amplified setting. Strangely enough, \"Back in Time,\" the one song from Mona Lisa's Sister, his most recent studio album at the time, sounds slick and commercial next to the older repertory, though it's still fine listening, and might have made a great single in this form. And then there are the audience participation, clap-along numbers, such as \"Hotel Chambermaid\" and \"Don't Let It Bring You Down,\" which can make the listener wish there'd been a video account of this show as well; even non-fans can float away on the ebullience of moments like these. And Parker closes the show with an artistically very risky move: white artists have been covering Sam Cooke songs for decades (Parker did it with \"Cupid\" on Mona Lisa's Sister); but \"A Change Is Gonna Come\" isn't just any Sam Cooke, or any song, trading as it does in images of racism, grief, and longing. Parker does pull it off, just. Southside Johnny is still the white artist best-suited to do that song, if anyone is, but Parker's restrained playing and raw emoting get him by, to a satisfying final.</p><p>&mdash; <strong>Mark Deming</strong></p>"
 			}
 		]
 	},
