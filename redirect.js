@@ -2,5 +2,5 @@
 
 let artistId = location.hash;
 artistId = artistId.slice(1);
-location.assign('/index.html#' + artistId);
+location.assign('./index.html#' + artistId);
 
